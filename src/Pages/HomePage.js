@@ -16,7 +16,7 @@ const HomePage = () => {
                 <Header />
             </div>
             <div className={'container'}>
-                <h1 className={'p-4'}><b>Home Page</b></h1>
+                <h1 className={'p-3'}><b>Meals</b></h1>
                 <MealList meals={meals}/>
             </div>
         </>
