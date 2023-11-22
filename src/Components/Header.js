@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className={'header'}>
+        <header className={'header '}>
             {/*<a href={'/'}>Home</a>*/}
             {/*<a href={'/search'}>Seacrh</a>*/}
-            <div className={'link'}>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/search"}>Search</Link>
+            <div className={"container d-flex justify-content-between p-4 text-decoration-none"}>
+                <Link to={"/"} className={'btn btn-outline-dark'}>Home</Link>
+                <Link to={"/search"} className={'btn btn-outline-dark'}>Search</Link>
             </div>
         </header>
     )

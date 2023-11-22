@@ -5,7 +5,9 @@ const SearchPage = () => {
     return (
         <div>
             <Header />
-            <h2>Search</h2>
+            <div className={'container'}>
+                <h2 className={'p-4'}><b>Search</b></h2>
+            </div>
         </div>
     )
 }

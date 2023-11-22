@@ -11,15 +11,15 @@ const HomePage = () => {
     },[])
 
     return (
-        <div>
+        <>
             <div >
                 <Header />
             </div>
             <div className={'container'}>
-                <h1>Home Page</h1>
+                <h1 className={'p-4'}><b>Home Page</b></h1>
                 <MealList meals={meals}/>
             </div>
-        </div>
+        </>
     )
 }
 export default HomePage
