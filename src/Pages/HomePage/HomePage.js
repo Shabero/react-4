@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import Header from "../Components/Header";
+import Header from "../../Components/Header/Header";
 import axios from "axios";
-import MealList from "../Components/MealList";
+import MealList from "../../Components/MealList/MealList";
 
 const HomePage = () => {
     const [meals, setMeals] = useState([])
@@ -16,7 +16,9 @@ const HomePage = () => {
                 <Header />
             </div>
             <div className={'container'}>
-                <h1 className={'p-3'}><b>Meals</b></h1>
+                <h1 className={'p-3'}>
+                    <b>Meals</b>
+                </h1>
                 <MealList meals={meals}/>
             </div>
         </>

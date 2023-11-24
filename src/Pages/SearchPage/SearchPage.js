@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Header from "../Components/Header";
+import Header from "../../Components/Header/Header";
 import axios from "axios";
-import MealList from "../Components/MealList";
+import MealList from "../../Components/MealList/MealList";
 
 const SearchPage = () => {
     const [value, setValue] = useState([])
@@ -21,8 +21,8 @@ const SearchPage = () => {
             <div className={'container'}>
                 <h2 className={'p-4'}><b>Search</b></h2>
                 <div className={"d-flex align-items-center p-4"}>
-                    <input type="text" className={"p-1 rounded-3 border-info"} onChange={handleGetValue}/>
-                    <button className={"btn btn-outline-info"} onClick={searchMeals}>Search</button>
+                    <input type="text" className={"p-2 rounded-3 border-dark border-1"} onChange={handleGetValue}/>
+                    <button className={"p-2 btn btn-outline-dark border-2"} onClick={searchMeals}>Search</button>
                 </div>
                 <MealList meals={value} />
             </div>
